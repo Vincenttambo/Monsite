@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion d'événements</title>
     <link rel="stylesheet" href="style.css">
+    
+
 </head>
 
 <body style="background-color: #EAF4FF;">
@@ -19,13 +21,20 @@
         <a href="inscription.html">📝Inscription</a>
         <a href="contact.html">📞Contact</a>
     </nav>
+    <div class="carousel">
+ <div class="carousel">
+  <img src="1.Accueil.png" class="slide">
+</div>
+
+
+
+
 </header>
 
 
 <main>
 
     <h2>Bienvenue sur notre site</h2>
-    <img src="1.Accueil.png" alt="Evenement professionnel">
 
     <p>
         Ce site permet de gérer différents types d'événements
@@ -48,6 +57,28 @@
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+let index = 0;
+let slides = document.querySelectorAll(".carousel .slide");
+
+function showSlide() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[index].style.display = "block";
+
+  index++;
+
+  if (index >= slides.length) {
+    index = 0;
+  }
+}
+
+showSlide();
+setInterval(showSlide, 3000);
+</script>
 
 </body>
 </html>
