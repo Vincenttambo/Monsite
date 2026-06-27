@@ -1,0 +1,132 @@
+ body{
+    background-color: #d9d9f1;  
+    font-family:  Arial, monospace;
+}
+
+/* Style pour la navigation */
+#navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */
+
+}
+
+.contenaire-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo-text{
+    text-transform: capitalize;
+    color: #1f79ef;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: #caf36a;
+    padding: 15px 5px;
+    box-shadow: 1px 2px rgba(2, 17, 37, 0.26);
+
+}
+.menu_item{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #7c023f;   
+}
+.menu_item:hover, .menu_item:focus, .menu_item.active{
+   color: #1f79ef; 
+   font-weight: 300;
+   transition: all 0.3ms;
+}
+.menu_item:not(:last-child){
+    border-right: 2px solid #7c023f;
+    padding-right: 25px;
+}
+
+.menu_item-link{
+    text-decoration: none;
+    color: unset;
+}
+
+.formSearch #input-chercher {
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    width: 300px;
+}
+.formSearch .input-btn{
+    cursor: pointer;
+    font-weight: 800;
+    padding: 8px 5px;
+    border-radius: 5px;
+    background-color: #1f79ef;
+    color: white;
+    border-color: #1f79ef;
+
+}
+/* Fin style navigation */
+
+#entete_pge{
+    /* background-color: #7fffd4a9;   */
+    height: 150px; 
+
+}
+
+main{
+    /* background-color: #ccc;     */
+    height: auto;
+}
+.section-enseignement{
+    background-color: white;
+    border-radius: 4px;
+    text-align: justify;
+    padding: 15px 25px;
+    padding-bottom: 35px;
+}
+.titre_enseignement{
+    font-size: 48px;
+    padding: 10px 5px;
+    width: 70%;
+    text-align: left;
+}
+.paragraphe_enseignement{
+    line-height: 1.5;
+    padding:  0 20px;
+}
+
+.section-box{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    
+}
+
+.box-left,.box-right{
+    border: 2px solid #caf36a;
+    border-radius: 6px;
+    width: 50%;
+    padding: 15px;
+
+}
+.box-left{
+    margin-right: 5px;
+}
+
+footer{
+    height: 100px; 
+    background-color: white;
+}
+
+footer,main,#entete_pge{
+    width: 80%;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
